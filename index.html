@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NeoSecure Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-card">
+
+  <!-- LOGIN -->
+  <div id="loginBox">
+    <h2>Welcome Back 👋</h2>
+    <p>Secure login to your workspace</p>
+
+    <div class="input-group">
+      <input type="email" id="loginEmail" required>
+      <label>Email</label>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="loginPassword" required>
+      <label>Password</label>
+      <span class="toggle" onclick="togglePassword('loginPassword')">👁️</span>
+    </div>
+
+    <div class="strength"><div id="strength-bar"></div></div>
+
+    <button onclick="login()">Login</button>
+
+    <div class="links">
+      <a onclick="showForgot()">Forgot password?</a>
+      <a onclick="showSignup()">Create account</a>
+    </div>
+  </div>
+
+  <!-- FORGOT PASSWORD -->
+  <div id="forgotBox" class="hidden">
+    <h2>Reset Password 🔐</h2>
+    <p>Enter your email to reset password</p>
+
+    <div class="input-group">
+      <input type="email" id="forgotEmail" required>
+      <label>Email</label>
+    </div>
+
+    <button onclick="resetPassword()">Send Reset Link</button>
+    <div class="links center">
+      <a onclick="showLogin()">← Back to login</a>
+    </div>
+  </div>
+
+  <!-- SIGN UP -->
+  <div id="signupBox" class="hidden">
+    <h2>Create Account 🚀</h2>
+
+    <div class="input-group">
+      <input type="text" id="name" required>
+      <label>Name</label>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="signupEmail" required>
+      <label>Email</label>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="signupPassword" required>
+      <label>Password</label>
+      <span class="toggle" onclick="togglePassword('signupPassword')">👁️</span>
+    </div>
+
+    <button onclick="signup()">Create Account</button>
+    <div class="links center">
+      <a onclick="showLogin()">← Back to login</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

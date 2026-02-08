@@ -36,8 +36,3 @@ Learning • Building • Growing 🚀
 
 Feedback and suggestions are welcome 😊
 
-
-<img width="1915" height="943" alt="Reset Password" src="https://github.com/user-attachments/assets/ab94b5a9-31ce-422b-b39e-3c7bea553cec" />
-
-
-
